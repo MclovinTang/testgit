@@ -1,0 +1,10 @@
+<a ui-sref="^.indexHome">返回首页</a><br/>
+你好,<span>{{username}}</span>![<span ng-click="loginOut()" style="cursor:pointer;">登出</span>]
+<div ng-controller="listCtrl">
+    <ul>
+        <li ng-repeat="item in vm">
+            <h4 ng-bind="item.name"></h4>
+            <img  ng-src="../{{item.imageUrl}}" width="100"/>
+        </li>
+    </ul>
+</div>
